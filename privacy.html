@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>隐私政策 · WhatsApp Intelligence Hub</title>
+  <meta name="description" content="WhatsApp Intelligence Hub 的数据访问、本机存储、外部服务、Google drive.file 授权、Limited Use、撤销与删除说明。">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到主要内容</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="WhatsApp Intelligence Hub 产品说明首页"><span class="brand-mark" aria-hidden="true">W</span><span>WhatsApp<br>Intelligence Hub</span></a>
+      <nav aria-label="主导航"><a href="index.html">产品说明</a><a href="privacy.html" aria-current="page">隐私政策</a><a href="terms.html">使用条款</a></nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <article class="policy page-width" aria-labelledby="policy-title">
+      <header class="policy-header"><p class="intro-label">WhatsApp Intelligence Hub</p><h1 id="policy-title">隐私政策</h1><p class="policy-lead">了解信息在什么位置保存、何时发送，以及如何撤销或删除。</p><p class="updated">更新日期：<time datetime="2026-11-12">2026-11-12</time></p></header>
+      <p class="policy-intro">本政策说明由 TianLongLuo 维护的 WhatsApp Intelligence Hub 扩展当前的数据处理方式。本网站仅提供产品与政策说明，不运行扩展、不接收聊天内容，也不使用跟踪脚本。扩展是独立工具，非 WhatsApp、Meta 或 Google 官方产品。</p>
+      <nav class="policy-toc" aria-label="隐私政策目录"><a href="#data">处理的信息</a><a href="#local">本机存储</a><a href="#services">外部服务</a><a href="#google">Google 授权</a><a href="#delete">撤销与删除</a><a href="#contact">联系</a></nav>
+      <section id="data"><h2>1. 处理哪些信息，以及为什么</h2><p>扩展读取 WhatsApp Web 页面中当前已加载的聊天信息，以提供翻译、备份、回复建议、专项分析和客户综合档案。信息可能包括消息正文、时间、联系人显示名称、电话号码、来源消息标识，以及你确认的客户画像、需求、标签、意向和跟进建议。</p><p>综合分析使用你当前选择的范围，不自动分析未加载的全部聊天历史。产品不自动发送消息。使用前，请确认你有适当的数据访问和处理依据。</p></section>
+      <section id="local"><h2>2. 信息保存在什么位置</h2><p>设置、API Key、聊天备份、分析结果、登记的 CRM 表格标识及同步状态保存在当前 Chrome 资料的扩展本地存储中。API Key 在该存储中不是加密保险箱，应保护设备和 Chrome 资料的访问权限。</p><p>导出的备份另存为本机文件，由你管理。卸载扩展不会自动删除这些导出文件。本版没有发布者运营的客户数据接收服务器或遥测接口。</p><p>同一 Chrome 资料内的本地数据不自动按 Google 账号分隔。本版建议每个 Chrome 资料仅使用一个 Google 账号和一个 WhatsApp 账号；多人或多账号请使用独立 Chrome 资料，切换 WhatsApp 时应正确更换资料来源名称。</p></section>
+      <section id="services"><h2>3. 何时发送给外部服务</h2>
+        <div class="service-block"><h3>DeepSeek</h3><p>当你使用 AI 翻译、回复建议或分析时，扩展将对应选定的文本、提示及必要上下文发送到你配置的 DeepSeek 服务。请在操作前确认所选信息适合交由该服务处理。</p></div>
+        <div class="service-block"><h3>Google Cloud Translation</h3><p>当你使用 Google 翻译时，扩展发送待翻译文本和语言参数，使用你自己配置的翻译 API Key。</p></div>
+        <div class="service-block"><h3>Google Sheets</h3><p>你连接自己的 Google 账号、核对并确认客户档案且手动发起同步后，扩展向你自己的 CRM 工作簿发送客户摘要、标签、意向依据、跟进任务，以及来源消息标识、数量和时间等结构化信息。默认不向 Sheets 同步完整原始聊天。</p><p>扩展会读取登记工作簿的结构与已有相关记录，用于校验、去重和更新。工作簿保存于你自己的 Google 账号，访问与共享由你管理。</p></div>
+        <p>Google 和 DeepSeek 对其接收数据的处理适用各自的服务条款与隐私政策。扩展不提供这些服务的账号或计费额度；相关费用由你自行承担。</p>
+      </section>
+      <section id="google"><h2>4. Google 授权与 Limited Use</h2><p>扩展唯一的 Google OAuth 范围为 <code>https://www.googleapis.com/auth/drive.file</code>。该范围允许查看、编辑、创建和删除你通过本应用使用的指定文件，不是读取整个 Google Drive 的授权。扩展当前提供创建、读取、校验和写入 CRM 工作簿的功能，不提供删除云端文件的操作。</p><p>授权对象是你自己的 Google 账号。OAuth 令牌由 Chrome 身份 API 管理，不写入扩展的业务本地存储，不交给 WhatsApp 内容脚本，也不发送给发布者。</p><p>WhatsApp Intelligence Hub 对通过 Google API 获得的信息的使用和转移，遵守 Google API Services User Data Policy，包括 Limited Use 要求。这些信息仅用于你选择的 CRM 功能，不用于广告、不出售，也不用于训练通用 AI 模型。Google 表格内容不会作为分析语料自动发送到模型服务。</p><p>发布者不通过本扩展投放基于用户数据的广告、出售用户数据，或使用用户数据训练通用 AI 模型。你主动调用的外部服务如何处理所接收数据，受相应服务政策约束。</p></section>
+      <section id="delete"><h2>5. 如何撤销连接、删除信息</h2><ul><li><strong>断开本机连接：</strong>扩展中的这一操作会保留云端表格和本机登记，不等于在 Google 端撤销授权。</li><li><strong>撤销 Google 授权：</strong>前往 Google 账号的「第三方应用和服务连接」管理，撤销本应用的访问权限。</li><li><strong>删除云端表格：</strong>在你自己的 Google Drive 中手动删除；撤销授权或卸载扩展不会自动删除表格。</li><li><strong>删除本机数据：</strong>卸载扩展会移除当前 Chrome 资料中的扩展本地存储。请先备份需要保留的记录。已经导出的备份文件需另外手动删除。</li></ul><p>以上操作的作用范围不同。请分别检查 Chrome 本地数据、导出文件和 Google Drive 中的表格。</p></section>
+      <section id="contact"><h2>6. 联系与政策更新</h2><p>维护者：TianLongLuo。有关授权、数据处理或本政策的问题，请通过 <a href="https://github.com/TianLongLuo/whatsapp-intelligence-hub-site/issues">公开 GitHub Issues</a> 反馈。请只描述问题，不要公开任何聊天内容、客户信息、API Key、令牌或其他敏感数据。</p><p>政策发生变更时会更新本页日期；本页不声明已通过 Google 认证，也不代表扩展已经全面开放。</p></section>
+      <div class="policy-end"><a href="index.html">返回产品说明</a><a href="terms.html">查看使用条款</a></div>
+    </article>
+
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div><p class="footer-brand">WhatsApp Intelligence Hub</p><p>由 TianLongLuo 维护。独立工具，非 WhatsApp、Meta 或 Google 官方产品，与上述公司无隶属、赞助或背书关系。</p></div>
+      <div class="footer-links"><a href="privacy.html">隐私政策</a><a href="terms.html">使用条款</a><a href="https://github.com/TianLongLuo/whatsapp-intelligence-hub-site/issues">联系与反馈 · GitHub Issues</a></div>
+    </div>
+    <p class="footer-date">更新日期：<time datetime="2026-11-12">2026-11-12</time></p>
+  </footer>
+</body>
+</html>
